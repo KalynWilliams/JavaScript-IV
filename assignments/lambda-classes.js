@@ -61,7 +61,7 @@ class ProjectManager extends Instructor {
   }
 
    standUp(channel) {
-    console.log( `${this.name} announces to ${channel}, @channel standy times!`);
+    console.log( `${this.name} announces to ${channel}, @channel performance time!`);
   }
 
    debugsCode(student, subject) {
@@ -115,9 +115,25 @@ const thresh = new ProjectManager({
 
 //CONSOLELOGS
 
+//student
 console.log(jhin.name);
 console.log(jhin.speak());
 console.log(jhin.previousBackground);
 console.log(jhin.PRAssignment('JavaScript IV'));
 console.log(jhin.sprintChallenge('JavaScript Fundamentals'));
 console.log(jhin.listsSubject());
+
+//Instructors
+console.log(zed.favLanguage);
+console.log(zed.demo('JavaScript IV'));
+console.log(zed.grade(jhin, 'Javascript IV'));
+
+console.log(jinx.favLanguage);
+console.log(jinx.demo('JavaScript IV'));
+console.log(jinx.grade(jhin, 'Javascript IV'));
+
+//project manager
+console.log(thresh.favInstructor);
+console.log(thresh.catchPhrase);
+console.log(thresh.standUp('SummonerSchool Sprint'));
+console.log(thresh.debugsCode(jhin, 'Javascript IV'));
